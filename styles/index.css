@@ -9,21 +9,25 @@
 }
 
 body {
-    background-color: var(--mantle);
+    background: linear-gradient(
+        135deg,
+        var(--mantle) 0%,
+        var(--crust) 45%,
+        var(--mantle) 90%
+    );
     color: var(--text);
     font-family: 'JetBrains Mono';
     font-weight: 500;
     overflow: hidden;
+    height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
     margin: 0 auto;
-    width: fit-content;
+    width: 100%;
 }
 
 .time-container {
@@ -38,11 +42,67 @@ body {
     }
 
     #dayOfWeek,
-    #month,
+    #month {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: 10px auto;
+    }
+
     #time {
+        color: var(--pink);
         font-size: 1.9em;
         font-weight: 700;
-        margin: 12px auto;
+        margin: 10px auto;
+    }
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 45%;
+
+    transition: all linear 0.2s;
+
+    .block {
+        background-color: var(--surface0);
+        border-radius: 2px;
+        display: flex;
+        gap: 20px;
+        filter: drop-shadow(2px 2px 2px var(--base));
+        margin: 1px auto;
+        padding: 2px 10px;
+        width: 100%;
+    }
+
+    .block-current {
+        background-color: var(--red);
+        color: var(--crust);
+        border-radius: 2px;
+        display: flex;
+        gap: 20px;
+        filter: drop-shadow(2px 2px 2px var(--red));
+        margin: 1px auto;
+        padding: 2px 10px;
+        width: 100%;
+    }
+
+    .block-num,
+    .block-times {
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+
+    .schedule {
+        color: var(--subtext1);
+    }
+
+    .weekend-display {
+        color: var(--green);
+        font-weight: 650;
     }
 }
 
@@ -52,14 +112,40 @@ body {
 
         .time-header {
             font-size: 1.1em;
-            margin: 12px auto;
+            margin: 9px auto;
         }
 
         #dayOfWeek,
-        #month,
+        #month {
+            font-size: 1.4em;
+            margin: 9px auto;
+        }
+
         #time {
             font-size: 1.6em;
-            margin: 12px auto;
+            margin: 9px auto;
         }
+    }
+
+    .blocks {
+        /* background-color: var(--overlay0); */
+        width: 80%;
+
+        .block,
+        .block-current {
+            width: 100%;
+            padding: 5px 0px 5px 5px;
+        }
+
+        .block-num,
+        .block-times {
+            font-size: 1.1em;
+            margin: 7px 0;
+        }
+    }
+
+    .schedule {
+        color: var(--subtext1);
+        font-size: 1.1em;
     }
 }
