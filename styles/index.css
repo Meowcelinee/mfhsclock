@@ -9,12 +9,7 @@
 }
 
 body {
-    background: linear-gradient(
-        135deg,
-        var(--mantle) 0%,
-        var(--crust) 45%,
-        var(--mantle) 90%
-    );
+    background: linear-gradient(135deg, var(--base), var(--crust), var(--base));
     color: var(--text);
     font-family: 'JetBrains Mono';
     font-weight: 500;
@@ -138,8 +133,9 @@ body {
 
         .block,
         .block-current {
+            font-size: 0.9em;
+            padding: 5px 0px 5px 6px;
             width: 100%;
-            padding: 5px 0px 5px 5px;
         }
 
         .block-num,
