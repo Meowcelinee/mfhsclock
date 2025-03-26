@@ -1,0 +1,17 @@
+{
+    "name": "mfhsclock",
+    "version": "1.0.0",
+    "description": "fhs clock remake by marceline",
+    "scripts": {
+        "dev": "parcel ./*.html",
+        "build": "parcel build ./*.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.4.1",
+    "dependencies": {
+        "luxon": "^3.6.0",
+        "parcel": "^2.14.2"
+    }
+}
