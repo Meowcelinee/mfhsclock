@@ -27,10 +27,7 @@ a {
     }
 
     &.about-link {
-        background-color: var(--crust);
-        border-radius: 20px;
         color: var(--overlay0);
-        text-decoration: none;
         margin: 30px;
         padding: 6px 12px;
         position: fixed;
