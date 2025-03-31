@@ -20,6 +20,24 @@ body {
     padding: 0;
 }
 
+a {
+    color: var(--maroon);
+    &:hover {
+        filter: brightness(125%);
+    }
+
+    &.about-link {
+        background-color: var(--crust);
+        border-radius: 20px;
+        color: var(--overlay0);
+        text-decoration: none;
+        margin: 30px;
+        padding: 6px 12px;
+        position: fixed;
+        bottom: 0px;
+    }
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -106,7 +124,43 @@ body {
     font-style: italic;
 }
 
+.description {
+    width: 60%;
+    margin: 0 auto;
+
+    .heading {
+        color: var(--yellow);
+        filter: saturate(80%);
+        letter-spacing: 0.4;
+    }
+
+    .description-body {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .description-text {
+        margin: 24px auto;
+        letter-spacing: 0.3;
+        line-height: 1.5;
+    }
+
+    .subtext {
+        color: var(--subtext1);
+
+        .italic {
+            font-style: italic;
+        }
+    }
+}
+
 @media (max-width: 600px) {
+    .about-link {
+        font-size: 0.8em;
+        margin: 5px;
+        padding: 4px 8px;
+    }
+
     .time-container {
         margin: 6px auto;
 
@@ -148,5 +202,20 @@ body {
     .schedule {
         color: var(--subtext1);
         font-size: 1.1em;
+    }
+
+    .description {
+        width: 95%;
+
+        .heading {
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .subtext,
+        .description-text {
+            font-size: 0.93em;
+            line-height: 1.4;
+        }
     }
 }
