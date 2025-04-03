@@ -32,6 +32,7 @@ a {
         padding: 6px 12px;
         position: fixed;
         bottom: 0px;
+        right: 0px;
     }
 }
 
@@ -117,6 +118,7 @@ a {
 }
 
 .shifted {
+    font-size: 15px;
     color: var(--subtext0);
     font-style: italic;
 }
@@ -152,6 +154,7 @@ a {
 }
 
 #remaining {
+    font-size: 16px;
     margin: 12px auto;
     width: 45%;
 }
@@ -221,7 +224,12 @@ a {
         }
     }
 
+    .shifted {
+        font-size: 13px;
+    }
+
     #remaining {
+        font-size: 13px;
         margin: 8px auto;
         width: 80%;
     }
