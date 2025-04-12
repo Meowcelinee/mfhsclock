@@ -26,12 +26,21 @@ a {
         filter: brightness(125%);
     }
 
+    &.login {
+        color: var(--overlay0);
+        margin: 30px;
+        padding: 6px 12px;
+        position: fixed;
+        bottom: 35px;
+        right: 0px;
+    }
+
     &.about-link {
         color: var(--overlay0);
         margin: 30px;
         padding: 6px 12px;
         position: fixed;
-        bottom: 0px;
+        bottom: 5px;
         right: 0px;
     }
 }
@@ -159,7 +168,74 @@ a {
     width: 45%;
 }
 
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 14px auto;
+    padding: 0;
+    width: 45%;
+
+    .login-header {
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 5;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .password-input {
+        color: var(--subtext0);
+        border: 2px solid var(--surface2);
+        border-radius: 2px;
+        background-color: var(--surface0);
+        font-size: 1rem;
+        margin: 5px auto;
+        padding: 4px 5px;
+        text-align: center;
+        width: 95%;
+
+        &:focus {
+            border: 2px solid var(--red);
+            box-shadow: none;
+        }
+    }
+
+    .login-submit {
+        color: var(--subtext0);
+        border: none;
+        border-radius: 2px;
+        background-color: var(--surface0);
+        font-size: 1rem;
+        padding: 4px 5px;
+        margin: 5px auto;
+        width: 69%;
+
+        &:hover {
+            background-color: var(--surface1);
+            cursor: pointer;
+        }
+    }
+
+    a {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 600px) {
+    .login {
+        color: var(--overlay0);
+        font-size: 0.8em;
+        margin: 0px;
+        padding: 4px 8px;
+        bottom: 20px;
+    }
+
     .about-link {
         font-size: 0.8em;
         margin: 5px;
@@ -187,7 +263,6 @@ a {
     }
 
     .blocks {
-        /* background-color: var(--overlay0); */
         width: 80%;
 
         .block,
@@ -231,6 +306,10 @@ a {
     #remaining {
         font-size: 13px;
         margin: 8px auto;
+        width: 80%;
+    }
+
+    .login-container {
         width: 80%;
     }
 }
