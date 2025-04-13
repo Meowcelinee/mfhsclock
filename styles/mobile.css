@@ -1,0 +1,76 @@
+@import url('colors.css');
+
+@media (max-width: 600px) {
+    .about-link {
+        font-size: 0.8em;
+        margin: 5px;
+        padding: 4px 8px;
+    }
+
+    .time-container {
+        margin: 6px auto;
+
+        .time-header {
+            font-size: 1.1em;
+            margin: 9px auto;
+        }
+
+        #dayOfWeek,
+        #month {
+            font-size: 1.4em;
+            margin: 9px auto;
+        }
+
+        #time {
+            font-size: 1.6em;
+            margin: 9px auto;
+        }
+    }
+
+    .blocks {
+        width: 80%;
+
+        .block,
+        .block-current {
+            font-size: 0.9em;
+            padding: 5px 0px 5px 6px;
+            width: 100%;
+        }
+
+        .block-num,
+        .block-times {
+            font-size: 1.1em;
+            margin: 7px 0;
+        }
+    }
+
+    .schedule {
+        color: var(--subtext1);
+        font-size: 1.1em;
+    }
+
+    .description {
+        width: 95%;
+
+        .heading {
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .subtext,
+        .description-text {
+            font-size: 0.93em;
+            line-height: 1.4;
+        }
+    }
+
+    .shifted {
+        font-size: 13px;
+    }
+
+    #remaining {
+        font-size: 13px;
+        margin: 8px auto;
+        width: 80%;
+    }
+}
