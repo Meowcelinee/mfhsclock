@@ -103,7 +103,7 @@ a {
     }
 }
 
-.blocks {
+#blocks {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +192,7 @@ a {
         }
     }
 
-    .blocks {
+    #blocks {
         width: 80%;
 
         .block,
