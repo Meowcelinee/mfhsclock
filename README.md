@@ -1,5 +1,5 @@
 # marceline's FHS clock
 
-[fhsclock](https://fhsclock.com/) but it's actually good (works outside EST)
+an alternative schedule clock for FHS, using localized times
 
-i literally just made this for myself and my gf
+([fhsclock](https://fhsclock.com/) but it's actually good)
