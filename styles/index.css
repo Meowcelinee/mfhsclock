@@ -208,6 +208,7 @@ a {
         width: 80%;
 
         .block,
+        .block-before,
         .block-current {
             font-size: 0.9em;
             padding: 5px 0px 5px 6px;
