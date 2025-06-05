@@ -137,6 +137,18 @@ a {
         width: 100%;
     }
 
+    .block-before {
+        background-color: var(--surface0);
+        color: var(--overlay0);
+        border-radius: 2px;
+        display: flex;
+        gap: 20px;
+        filter: drop-shadow(2px 2px 2px var(--base)) brightness(0.9);
+        margin: 1px auto;
+        padding: 0 10px;
+        width: 100%;
+    }
+
     .block-num,
     .block-times {
         font-size: 1.3em;
